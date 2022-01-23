@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
@@ -29,7 +28,7 @@ const questions = [
         message: 'What is your email?',
     },
 ];
-
+console.log(questions);
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
