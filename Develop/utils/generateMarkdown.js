@@ -18,19 +18,26 @@ function generateMarkdown(data) {
   return `
   # ${data.title}
 
-  ## ${data.description}
+  ## Project Description
+  ${data.description}
 
-  ## ${data.usage}
+  ## Usage
+  ${data.usage}
 
-  ## ${data.installation}
+  ## Installation Guide
+  ${data.installation}
 
-  ## ${data.license}
+  ## Licenses
+  ${data.license}
 
-  ### ${data.github}
+  ### GitHub
+  ${data.github}
 
-  ### ${data.email}
+  ### Email
+  ${data.email}
 
-  ### ${data.contributions}
+  ### How to contribute
+  ${data.contributions}
 
 `;
 }
