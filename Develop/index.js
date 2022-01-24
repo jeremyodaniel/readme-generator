@@ -1,5 +1,4 @@
 // TODO: Include packages needed for this application
-const { groupEnd } = require('console');
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
