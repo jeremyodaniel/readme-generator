@@ -1,4 +1,5 @@
 // TODO: Include packages needed for this application
+const { groupEnd } = require('console');
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
@@ -41,7 +42,7 @@ const questions = [
 			{
 				type: 'input',
 				name: 'installation',
-				message: 'What steps are requird to install this project? ',
+				message: 'What steps are required to install this project? ',
 			},
 			{
 				type: 'input',
@@ -57,8 +58,8 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 function init() {
 	inquirer.prompt(questions)
-		.then(function(answer) {
-			console.log(answer);
+		.then(function(data) {
+			writeToFile(generateMarkdown(data));
 		})
 };
 
